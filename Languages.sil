@@ -1,0 +1,245 @@
+
+[Captions]
+TForm1.C_cmd=Получить карту символов в шестнадцатеричном виде~!@#$Dump chars map in HEX~!@#$
+TForm1.H_cmd=Получить данные заголовка файла PGF~!@#$Dump font header~!@#$
+TForm1.I_cmd=Получить информацию по символам~!@#$Dump chars info~!@#$
+TForm1.M_cmd=Получить данные метрической таблицы~!@#$Dump metrics table~!@#$
+TForm1.P_cmd=Получить таблицу назначений символов~!@#$Dump chars pointer~!@#$
+TForm1.S_cmd=Получить таблицы теневых карт~!@#$Dump shadow map~!@#$
+TForm1.sButton1=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton10=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton11=Начать объединение!~!@#$Start merging!~!@#$
+TForm1.sButton12=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton13=Просмотреть картинки!~!@#$Show Pictures!~!@#$
+TForm1.sButton14=Получить информацию!~!@#$Get Information!~!@#$
+TForm1.sButton15=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton16=О программе~!@#$About~!@#$
+TForm1.sButton17=О программе~!@#$About~!@#$
+TForm1.sButton2=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton3=Выход~!@#$Exit~!@#$
+TForm1.sButton4=Выход~!@#$Exit~!@#$
+TForm1.sButton5=Начать Конвертацию!~!@#$Start Conversion!~!@#$
+TForm1.sButton6=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton7=Обзор...~!@#$Browse...~!@#$
+TForm1.sButton8=Начать конвертацию!~!@#$Start Conversion!~!@#$
+TForm1.sButton9=Обзор...~!@#$Browse...~!@#$
+TForm1.sCheckBox1=Наклонный шрифт~!@#$Italic font~!@#$
+TForm1.sCheckBox2=Жирный шрифт~!@#$Bold font~!@#$
+TForm1.sCheckBox3=Просмотр полученного шрифта (картинкой, только английские символы!)~!@#$View the resulting font (picture, only English characters!)~!@#$
+TForm1.sCheckBox4=Просмотр полученного шрифта (несколько картинок, все обычные символы, без спец. символов)~!@#$View the resulting font (several pictures, all regular characters, w/o special characters)~!@#$
+TForm1.sCheckBox5=Без теней, только обычный шрифт!~!@#$No shadows, just plain font!~!@#$
+TForm1.sGroupBox1=Выберите исходный (TTF) и конечный (PGF) файлы:~!@#$Select source (TTF) and destination (PGF) files:~!@#$
+TForm1.sGroupBox10=Лог операции:~!@#$Operation log:~!@#$
+TForm1.sGroupBox11=Выберите Исходный файл для объединения:~!@#$Select First file to merge:~!@#$
+TForm1.sGroupBox12=Выберите файл для Объединения:~!@#$Select the Second file to merge:~!@#$
+TForm1.sGroupBox13=Выберите PGF файл для просмотра его в виде картинок:~!@#$Select a PGF file to view it as pictures:~!@#$
+TForm1.sGroupBox14=Выберите PGF файл для получения информации о нём:~!@#$Select a PGF file to get information about it:~!@#$
+TForm1.sGroupBox15=Какую информацию выводить?:~!@#$What information should display?:~!@#$
+TForm1.sGroupBox2=Основные настройки конвертации~!@#$Main conversion settings~!@#$
+TForm1.sGroupBox3=Дополнительный настройки конвертации (тени шрифта)~!@#$Advanced conversion settings (font shadows)~!@#$
+TForm1.sGroupBox4=Выберите TTF файл для конвертации:~!@#$Select a TTF file to convert:~!@#$
+TForm1.sGroupBox5=Выберите куда сохранить полученный файл:~!@#$Choose where to save the finished file:~!@#$
+TForm1.sGroupBox6=Лог операции:~!@#$Operation log:~!@#$
+TForm1.sGroupBox8=Информация:~!@#$Information:~!@#$
+TForm1.sGroupBox9=Лог операции:~!@#$Operation log:~!@#$
+TForm1.sLabel1=_________________________________________________________________________________________________________________~!@#$_________________________________________________________________________________________________________________~!@#$
+TForm1.sLabel11=0.0~!@#$0.0~!@#$
+TForm1.sLabel12=4.0~!@#$4.0~!@#$
+TForm1.sLabel13=________________________________________________________~!@#$________________________________________________________~!@#$
+TForm1.sLabel14=________________________________________________________~!@#$________________________________________________________~!@#$
+TForm1.sLabel15=Расположение тени~!@#$Shadow layout~!@#$
+TForm1.sLabel16=По горизонтали:~!@#$Horizontal:~!@#$
+TForm1.sLabel17=По вертикали:~!@#$Vertical:~!@#$
+TForm1.sLabel18=-3~!@#$-3~!@#$
+TForm1.sLabel19=0~!@#$0~!@#$
+TForm1.sLabel2=Размер шрифта (рекомендуется 16-24):~!@#$Font size (recommended 16-24):~!@#$
+TForm1.sLabel20=3~!@#$3~!@#$
+TForm1.sLabel21=-3~!@#$-3~!@#$
+TForm1.sLabel22=0~!@#$0~!@#$
+TForm1.sLabel23=3~!@#$3~!@#$
+TForm1.sLabel26=Язык:~!@#$Language:~!@#$
+TForm1.sLabel27=Оболочка:~!@#$Skin:~!@#$
+TForm1.sLabel28=В Windows 8 - 8.1 - 10 - 11данная версия конвертораНЕ РАБОТАЕТ!!!~!@#$In Windows 10, thisconverter versionDOES NOT WORK!!!~!@#$
+TForm1.sLabel29=Переход к вкладке простого коневертера произойдёт через~!@#$The transition to the tab of a simple converger will occur through~!@#$
+TForm1.sLabel3=Горизонтальное масштабирование букв:~!@#$Letter horizontal scaling:~!@#$
+TForm1.sLabel31=секунд.~!@#$sec.~!@#$
+TForm1.sLabel4=Расстояние между буквами:~!@#$Letter spacing:~!@#$
+TForm1.sLabel5=Радиальное размытия (Размытие по Гауссу):~!@#$Radial Blur (Gaussian Blur):~!@#$
+TForm1.sLabel7=0.1~!@#$0.1~!@#$
+TForm1.sLabel8=4.0~!@#$4.0~!@#$
+TForm1.sLabel9=Интенсивность или прозрачность тени:~!@#$Shadow intensity or transparency:~!@#$
+TForm1.sTabSheet1=TTF2PGF Профессиональный~!@#$TTF2PGF Professional~!@#$
+TForm1.sTabSheet2=TTF2PGF Простой~!@#$TTF2PGF Simple~!@#$
+TForm1.sTabSheet3=Конвертор TTF в PGF~!@#$TTF to PGF Converter~!@#$
+TForm1.sTabSheet4=Информация о PGF файле (для специалистов)~!@#$PGF file information (for specialists)~!@#$
+TForm1.sTabSheet5=Объединить 2 PGF файла~!@#$Merge 2 PGF Files~!@#$
+TForm1.sTabSheet6=Просмотр шрифта в виде картинкок~!@#$View the font as pictures~!@#$
+TForm1.TForm1=eXP.Net TTF2PGF GUI 1.0~!@#$eXP TTF2PGF GUI 1.0~!@#$
+TForm2.sButton1=Закрыть~!@#$Close~!@#$
+TForm2.TForm2=Просмотр картинок~!@#$Pictures Viewer~!@#$
+TForm3.sButton1=Закрыть~!@#$Close~!@#$
+TForm3.sLabel1=Исходный код приложения (без компонентов) можно найти~!@#$The source code of the application (without components) can be~!@#$
+TForm3.sLabel2=по ссылке ниже:~!@#$found at the link below:~!@#$
+TForm3.sWebLabel1=eXPert's GitHub~!@#$eXPert's GitHub~!@#$
+TForm3.TForm3=О программе~!@#$About This Application~!@#$
+
+[CharSets]
+TForm1.sLabel28=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm1.sLabel29=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm1.sLabel31=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm1.sMemo5=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm1.TForm1=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm2.TForm2=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm3.RTM=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm3.sWebLabel1=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+TForm3.TForm3=DEFAULT_CHARSET~!@#$DEFAULT_CHARSET~!@#$
+
+[Collections]
+TForm3.RTM.Items-0+.Text=<font color="lime"><b>eXP TTF2PGF GUI 1.0<b/></font>~!@#$<font color="lime"><b>eXP TTF2PGF GUI 1.0<b/></font>~!@#$
+TForm3.RTM.Items-1+.Text=<font color="lime">-=GUI для консольных TTF2PGF конверторов=-</font>~!@#$<font color="lime">-=GUI for console TTF2PGF converters=-</font>~!@#$
+TForm3.RTM.Items-10+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-11+.Text=<font color="lime">TTF2PGF от Erik Pshat &copy; 2005</font>~!@#$<font color="lime">TTF2PGF by Erik Pshat &copy; 2005</font>~!@#$
+TForm3.RTM.Items-12+.Text=<a href="https://www.pspx.ru/forum/showthread.php?t=86308"><font color="lime"><u>PSPx Форум</u></font></a>~!@#$<a href="https://www.pspx.ru/forum/showthread.php?t=86308"><font color="lime"><u>PSPx Forum</u></font></a>~!@#$
+TForm3.RTM.Items-13+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-14+.Text=<font color="lime">TTF2PGF от tpunix &copy; 2013</font>~!@#$<font color="lime">TTF2PGF by tpunix &copy; 2013</font>~!@#$
+TForm3.RTM.Items-15+.Text=<a href="https://github.com/tpunix/pgftool"><font color="lime"><u>tpunix GitHub</u></font></a>~!@#$<a href="https://github.com/tpunix/pgftool"><font color="lime"><u>tpunix GitHub</u></font></a>~!@#$
+TForm3.RTM.Items-16+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-17+.Text=<font color="lime">AlphaControls V16.18</font>~!@#$<font color="lime">AlphaControls V16.18</font>~!@#$
+TForm3.RTM.Items-18+.Text=<a href="http://www.alphaskins.com/"><font color="lime"><u>www.alphaskins.com/</u></font></a>~!@#$<a href="http://www.alphaskins.com/"><font color="lime"><u>www.alphaskins.com/</u></font></a>~!@#$
+TForm3.RTM.Items-19+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-2+.Text=<font color="lime"><b>eXP.Net &copy; 2022<b/></font>~!@#$<font color="lime"><b>eXP.Net &copy; 2022<b/></font>~!@#$
+TForm3.RTM.Items-20+.Text=<font color="lime">SiComponents TsiLang Components Suite V7.6.0.1</font>~!@#$<font color="lime">SiComponents TsiLang Components Suite V7.6.0.1</font>~!@#$
+TForm3.RTM.Items-21+.Text=<a href="http://www.tsilang.com/"><font color="lime"><u>www.tsilang.com/</u></font></a>~!@#$<a href="http://www.tsilang.com/"><font color="lime"><u>www.tsilang.com/</u></font></a>~!@#$
+TForm3.RTM.Items-22+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-23+.Text=<font color="lime">IOComp Components 4.0.4 SP2</font>~!@#$<font color="lime">IOComp Components 4.0.4 SP2</font>~!@#$
+TForm3.RTM.Items-24+.Text=<a href="https://www.iocomp.com/"><font color="lime"><u>www.iocomp.com</u></font></a>~!@#$<a href="https://www.iocomp.com/"><font color="lime"><u>www.iocomp.com</u></font></a>~!@#$
+TForm3.RTM.Items-25+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-26+.Text=<font color="lime">JEDI-VCL V3.49</font>~!@#$<font color="lime">JEDI-VCL V3.49</font>~!@#$
+TForm3.RTM.Items-27+.Text=<a href="https://www.delphi-jedi.org/"><font color="lime"><u>www.Delphi-JEDI.org</u></font></a>~!@#$<a href="https://www.delphi-jedi.org/"><font color="lime"><u>www.Delphi-JEDI.org</u></font></a>~!@#$
+TForm3.RTM.Items-28+.Text=<font color="lime"><b>&bull;</b></font>~!@#$<font color="lime"><b>&bull;</b></font>~!@#$
+TForm3.RTM.Items-29+.Text=<font color="lime">TRealTimeMarquee V3.5</font>~!@#$<font color="lime">TRealTimeMarquee V3.5</font>~!@#$
+TForm3.RTM.Items-3+.Text=<font color="black"><b>-</b></font>~!@#$<font color="black"><b>-</b></font>~!@#$
+TForm3.RTM.Items-30+.Text=<a href="http://www.delphiarea.com"><font color="lime"><u>www.delphiarea.com</u></font></a>~!@#$<a href="http://www.delphiarea.com"><font color="lime"><u>www.delphiarea.com</u></font></a>~!@#$
+TForm3.RTM.Items-31+.Text=<font color="black"><b>-</b></font>~!@#$<font color="black"><b>-</b></font>~!@#$
+TForm3.RTM.Items-32+.Text=<font color="black"><b>-</b></font>~!@#$<font color="black"><b>-</b></font>~!@#$
+TForm3.RTM.Items-33+.Text=<font color="black"><b>-</b></font>~!@#$<font color="black"><b>-</b></font>~!@#$
+TForm3.RTM.Items-4+.Text=<font color="lime">Данная программа написана на Delphi 7</font>~!@#$<font color="lime">This program is written in Delphi 7</font>~!@#$
+TForm3.RTM.Items-5+.Text=<font color="lime">Разработка и написание кода:</font>~!@#$<font color="lime">Developing and writing code:</font>~!@#$
+TForm3.RTM.Items-6+.Text=<font color="lime"><b>eXPert</b></font>~!@#$<font color="lime"><b>eXPert</b></font>~!@#$
+TForm3.RTM.Items-7+.Text=<font color="black"><b>-</b></font>~!@#$<font color="black"><b>-</b></font>~!@#$
+TForm3.RTM.Items-8+.Text=<font color="lime">При создании данной программы</font>~!@#$<font color="lime">When creating this program</font>~!@#$
+TForm3.RTM.Items-9+.Text=<font color="lime">были использованны следующие компоненты:</font>~!@#$<font color="lime">the following components were used:</font>~!@#$
+
+[Dialogs]
+TForm1.Abort=Прервать~!@#$&Abort~!@#$
+TForm1.All=Все~!@#$&All~!@#$
+TForm1.Cancel=Отмена~!@#$Cancel~!@#$
+TForm1.Confirm=Подтвердить~!@#$Confirm~!@#$
+TForm1.Error=Ошибка~!@#$Error~!@#$
+TForm1.Help=Помощь~!@#$&Help~!@#$
+TForm1.Ignore=Игнорировать~!@#$&Ignore~!@#$
+TForm1.Information=Информация~!@#$Information~!@#$
+TForm1.No=Нет~!@#$&No~!@#$
+TForm1.No To All=Нет для Всех~!@#$N&o to All~!@#$
+TForm1.OK=ОК~!@#$OK~!@#$
+TForm1.Retry=Повторить~!@#$&Retry~!@#$
+TForm1.Warning=Предупреждение~!@#$Warning~!@#$
+TForm1.Yes=Да~!@#$&Yes~!@#$
+TForm1.Yes To All=Да для Всех~!@#$Yes to &All~!@#$
+
+[Fonts]
+TForm1.sLabel28=Verdana~!@#$Verdana~!@#$
+TForm1.sLabel29=MS Sans Serif~!@#$MS Sans Serif~!@#$
+TForm1.sLabel31=MS Sans Serif~!@#$MS Sans Serif~!@#$
+TForm1.sMemo5=MS Sans Serif~!@#$MS Sans Serif~!@#$
+TForm1.TForm1=MS Sans Serif~!@#$MS Sans Serif~!@#$
+TForm2.TForm2=MS Sans Serif~!@#$MS Sans Serif~!@#$
+TForm3.RTM=Verdana~!@#$Verdana~!@#$
+TForm3.sWebLabel1=MS Sans Serif~!@#$MS Sans Serif~!@#$
+TForm3.TForm3=MS Sans Serif~!@#$MS Sans Serif~!@#$
+
+[Hints]
+TForm1.C_cmd=Получить карту символов в шестнадцатиричном виде.Пример:# charmap table: 1039# -----------------------------0020002100220023002400250026002700280029002a002b002c....~!@#$Get a symbol map in hexadecimal form.Example:# charmap table: 1039# -----------------------------0020002100220023002400250026002700280029002a002b002c....~!@#$
+TForm1.H_cmd=Получить данные заголовка PGF файла.Пример:# PGF header:# -----------------------------header_len: 0188version   : 6.2font name : Times New Romanfont type : Regularh_size    : 10.125000v_size    : 10.125000ascender  : 15.828125descender : -2.171875h_res     : 128.000000v_res     : 128.000000bpp       : 4.....~!@#$Get the header data of the PGF file. Example: # PGF header:# -----------------------------header_len: 0188version   : 6.2font name : Times New Romanfont type : Regularh_size    : 10.125000v_size    : 10.125000ascender  : 15.828125descender : -2.171875h_res     : 128.000000v_res     : 128.000000bpp       : 4.....~!@#$
+TForm1.I_cmd=Получить информацию по символам.Пример:----     0 : U_0020 ----    dimension: h=  0.000000 v=  0.000000    bearingX : h=  0.000000 v= -2.250000    bearingY : h=  0.000000 v=  8.000000    advance  : h=  4.500000 v= 16.250000    bitmap: width=0 height=0 left=0 top=0....~!@#$Get information on symbols. Example: ----     0 : U_0020 ----    dimension: h=  0.000000 v=  0.000000    bearingX : h=  0.000000 v= -2.250000    bearingY : h=  0.000000 v=  8.000000    advance  : h=  4.500000 v= 16.250000    bitmap: width=0 height=0 left=0 top=0....~!@#$
+TForm1.M_cmd=Получить данные метрической таблицы PGF файла.Пример:# Dimension table: 255# -----------------------------  0: h =  6.750000    v =  8.500000  1: h =  2.750000    v =  3.000000  2: h =  3.000000    v =  2.750000  3: h =  8.750000    v = 11.750000  4: h = 10.500000    v = 12.250000  5: h = 12.500000    v = 12.000000  6: h = 10.000000    v = 11.750000  7: h =  7.750000    v = 12.250000  8: h = 12.250000    v = 11.750000  9: h = 12.500000    v = 11.750000 10: h =  8.750000    v =  8.000000....~!@#$Get the data of the metric table of the PGF file.Example:# Dimension table: 255# -----------------------------  0: h =  6.750000    v =  8.500000  1: h =  2.750000    v =  3.000000  2: h =  3.000000    v =  2.750000  3: h =  8.750000    v = 11.750000  4: h = 10.500000    v = 12.250000  5: h = 12.500000    v = 12.000000  6: h = 10.000000    v = 11.750000  7: h =  7.750000    v = 12.250000  8: h = 12.250000    v = 11.750000  9: h = 12.500000    v = 11.750000 10: h =  8.750000    v =  8.000000....~!@#$
+TForm1.P_cmd=Получить таблицу назначений символов.Пример:# charptr table: 1039# -----------------------------   0 : 00000000   1 : 0000000c   2 : 00000028   3 : 00000048   4 : 00000090   5 : 000000d8   6 : 00000140   7 : 000001a8   8 : 000001c8   9 : 000001f8   a : 00000228   b : 00000258   c : 00000284....~!@#$Get a table of character assignments. Example: # charptr table: 1039# -----------------------------   0 : 00000000   1 : 0000000c   2 : 00000028   3 : 00000048   4 : 00000090   5 : 000000d8   6 : 00000140   7 : 000001a8   8 : 000001c8   9 : 000001f8   a : 00000228   b : 00000258   c : 00000284....~!@#$
+TForm1.S_cmd=Получить таблицу теневых карт.Пример:# Shadow map table: 324# -----------------------------0020002100220023002400250026002700280029002a002b002c....~!@#$Get a table of shadow maps. Example:# Shadow map table: 324# -----------------------------0020002100220023002400250026002700280029002a002b002c....~!@#$
+TForm1.sButton1=Открыть диалог выбора файла шрифта в формате TTF.~!@#$Open a dialog for selecting a font file in TTF format.~!@#$
+TForm1.sButton10=Открыть Диалог выбора PGF файла для Объединения.~!@#$Open the PGF File Selection Dialog for Merge.~!@#$
+TForm1.sButton11=Начать Объединение PGF файлов.~!@#$Start Merging PGF Files.~!@#$
+TForm1.sButton12=Открыть Диалог выбора PGF файла.~!@#$Open PGF file selection Dialog.~!@#$
+TForm1.sButton13=Просмотреть PGF файл шрифта в виде картинок.~!@#$View PGF font file as pictures.~!@#$
+TForm1.sButton14=Получить информацию о PGF файле.~!@#$Get information about PGF file.~!@#$
+TForm1.sButton15=Открыть Диалог выбора PGF файла.~!@#$Open PGF file selection dialog.~!@#$
+TForm1.sButton16=Открыть окно "О программе".~!@#$Open the "About" window.~!@#$
+TForm1.sButton17=Открыть окно "О программе".~!@#$Open the "About" window.~!@#$
+TForm1.sButton2=Открыть диалог сохранения шрифта в формате PGF.~!@#$Open dialog for saving font in PGF format.~!@#$
+TForm1.sButton3=Выход из приложения.~!@#$Exit the application.~!@#$
+TForm1.sButton4=Выход из приложения.~!@#$Exit the application.~!@#$
+TForm1.sButton5=Запуск конвертации шрифта.~!@#$Start font conversion.~!@#$
+TForm1.sButton6=Открыть диалог выбора файла шрифта в формате TTF.~!@#$Open a dialog for selecting a font file in TTF format.~!@#$
+TForm1.sButton7=Открыть диалог сохранения шрифта в формате PGF.~!@#$Open dialog for saving font in PGF format.~!@#$
+TForm1.sButton8=Запуск конвертации шрифта.~!@#$Start font conversion.~!@#$
+TForm1.sButton9=Открыть Диалог выбора Исходного PGF файла.~!@#$Open the Source PGF File Selection Dialog.~!@#$
+TForm1.sCheckBox1=Поставьте галочку чтобы конечный шрифт был наклонным.~!@#$Check the box to make the final font italic.~!@#$
+TForm1.sCheckBox2=Поставьте галочку чтобы конечный шрифт был жирным.~!@#$Check the box to make the final font bold.~!@#$
+TForm1.sComboBox1=Выберите размер для будущего шрифта PGF.Доступные значения: 8-32.Рекомендуемое значение: 16-24.По умолчанию: 16.~!@#$Choose a size for the future PGF font.Available values: 8-32.Recommended value: 16-24.Default: 16.~!@#$
+TForm1.sComboBox2=Выберите горизонтальное масштабирование букв шрифта.Доступные значения: 0.75-1.50.По умолчанию 1.00.~!@#$Select the horizontal scaling of the font letters.Available values: 0.75-1.50.The default is 1.00.~!@#$
+TForm1.sComboBox3=Выберите расстояние между буквами шрифта.Доступные значения: 0.75-1.50.По умолчанию 1.00.~!@#$Select the spacing between the letters of the font.Available values: 0.75-1.50.The default is 1.00.~!@#$
+TForm1.sComboBox5=Выберите язык программы.~!@#$Select the program language.~!@#$
+TForm1.sEdit1=Выберите файл шрифта в формате TTF.~!@#$Select a font file in TTF format.~!@#$
+TForm1.sEdit2=Выберите куда и под каким именем сохранить файл PGF.~!@#$Choose where and under what name to save the PGF file.~!@#$
+TForm1.sEdit3=Выберите файл шрифта в формате TTF.~!@#$Select a font file in TTF format.~!@#$
+TForm1.sEdit4=Выберите куда и под каким именем сохранить файл PGF.~!@#$Choose where and under what name to save the PGF file.~!@#$
+TForm1.sEdit5=Выбеите Исходный PGF файл...То есть тот файл С которым будетпроисходить объединение.~!@#$Knock out the Source PGF file...That is, the file With which it will beunification occurs.~!@#$
+TForm1.sEdit6=Выберите PGF файл для Объединения.То есть ТОТ файл, кторый будетобъединён С Исходным файлом.~!@#$Select the PGF file to Merge.That is, the file that will bemerged with the Source file.~!@#$
+TForm1.sEdit7=Выберите PGF файл для просмотра в виде картинок.~!@#$Select the PGF file to view as pictures.~!@#$
+TForm1.sEdit8=Выберите PGF файл, информацию о котором хоти получить.~!@#$Select the PGF file you want to get information about.~!@#$
+TForm1.sMemo2=Лог конвертации файла~!@#$File conversion log~!@#$
+TForm1.sMemo3=Информация о выбраном PGF файле...~!@#$Information about the selected PGF file...~!@#$
+TForm1.sMemo4=Лог совмещения файлов.~!@#$File merging log.~!@#$
+TForm1.sMemo5=Лог открытия PGF файла а виде картинок.~!@#$Log of opening PGF file in the form of pictures.~!@#$
+TForm1.sSkinSelector1=Выберите оболожку для программы.~!@#$Select the skin for the program.~!@#$
+TForm1.sTrackBar1=Выберите уровень размытия символов шрифта по Гауссу.Доступные значения: 0.1-4.0Рекомендуемые значения: 1.8-2.6.По умолчанию: 0.1.~!@#$Select the level of blurring of the Gaussian font characters.Available values: 0.1-4.0Recommended values: 1.8-2.6.Default: 0.1.~!@#$
+TForm1.sTrackBar2=Выберите значение прозрачности итогового шрифта.Доступные значения: 0.0-4.0Рекомендуемые значения: 0.3-1.8.По умолчанию: 0.0 (шрифт не прозрачный).~!@#$Select the transparency value of the resulting font.Available values: 0.0-4.0Recommended values: 0.3-1.8.Default: 0.0 (font is not transparent).~!@#$
+TForm1.sTrackBar3=Выберите наклон тени по горизонтали.Наклон осуществляется вправо или влево от символа.Доступные значения -3-0-3 (влево-по центру-вправо).По умолчанию: 0.~!@#$Choose to tilt the shadow horizontally.Tilt to the right or left of the character.The available values are -3-0-3 (left-center-right).Default: 0.~!@#$
+TForm1.sTrackBar4=Выберите наклон тени по вертикали.Наклон осуществляется вверх или вниз от символа.Доступные значения -3-0-3 (вниз-по центру-вверх).По умолчанию: 0.~!@#$Select tilt the shadow vertically.Tilt up or down from the symbol.The available values are -3-0-3 (down-center-up).Default: 0.~!@#$
+TForm2.sBitBtn1=Предыдущее изображение.~!@#$Previous image.~!@#$
+TForm2.sBitBtn2=Следующее изображение.~!@#$Next image.~!@#$
+TForm2.sButton1=Закрыть окно просмотра изображений.~!@#$Close the image viewer.~!@#$
+TForm3.sButton1=Закрыть окно "О программе".~!@#$Close the "About" window.~!@#$
+
+[Language names - for internal use only!]
+Language_1=�������
+Language_2=English
+
+[OPTIONS]
+CommentsFile=
+Delimiter=~!@#$
+IsUTF8File=1
+
+[Other]
+TForm1.sEdit1.Text=Выберите исходный файл шрифта в формате TTF~!@#$Select the source font file in TTF format~!@#$
+TForm1.sEdit2.Text=Выберите место сохранения конечного файла в формате PGF~!@#$Select where to save the destination file in PGF format~!@#$
+TForm1.sEdit3.Text=Выберите TTF файл шрифта~!@#$Select a TTF font file~!@#$
+TForm1.sEdit4.Text=Выберите имя и путь для сохранения PGF файла~!@#$Choose a name and path to save the PGF file~!@#$
+TForm1.sEdit5.Text=Путь к Исходному PGF файлу...~!@#$The path to the Source PGF file...~!@#$
+TForm1.sEdit6.Text=Путь к PGF файлу для Объединения...~!@#$The path to the PGF file for Merging...~!@#$
+TForm1.sEdit7.Text=Выберите PGF файл~!@#$Select PGF file~!@#$
+TForm1.sEdit8.Text=Выберите PGF файл~!@#$Select PGF file~!@#$
+TForm1.TForm1.HelpFile=Help_RU.chm~!@#$Help_EN.chm~!@#$
+
+[Strings]
+TForm1.IDS_2=Невозможно удалить: ~!@#$Unable to delete:~!@#$
+TForm1.IDS_27=Должен быть выбран хотя бы один параметр!~!@#$At least one option must be selected!~!@#$
+TForm1.IDS_3=Невозможно удалить папку: ~!@#$Unable to delete directory:~!@#$
+TForm1.IDS_34=Открыть исходный TTF файл...~!@#$Open the original TTF file...~!@#$
+TForm1.IDS_35=Файлы шрифтов в формате TTF|*.ttf~!@#$Font files in TTF format|*.ttf~!@#$
+TForm1.IDS_38=Открыть изучаемый PGF файл...~!@#$Open the studied PGF file...~!@#$
+TForm1.IDS_39=Файлы шрифтов в формате PGF|*.pgf~!@#$Font files in PGF format|*.pgf~!@#$
+TForm1.IDS_40=Открыть Исходный PGF файл...~!@#$Open Source PGF File...~!@#$
+TForm1.IDS_42=Открыть Объединяемый PGF файл...~!@#$Open Merge PGF File...~!@#$
+TForm1.IDS_44=Открыть PGF файл для просмотра в виде картинок...~!@#$Open PGF file to view as images...~!@#$
+TForm1.IDS_46=Сохранить файл в формате PGF...~!@#$Save file as PGF...~!@#$
+
