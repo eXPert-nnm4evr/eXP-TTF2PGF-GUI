@@ -81,7 +81,6 @@ object Form1: TForm1
           ShowHint = True
           TabOrder = 2
           Text = #1042#1099#1073#1077#1088#1080#1090#1077' '#1084#1077#1089#1090#1086' '#1089#1086#1093#1088#1072#1085#1077#1085#1080#1103' '#1082#1086#1085#1077#1095#1085#1086#1075#1086' '#1092#1072#1081#1083#1072' '#1074' '#1092#1086#1088#1084#1072#1090#1077' PGF'
-          OnChange = sEdit2Change
         end
         object sButton2: TsButton
           Left = 632
@@ -575,8 +574,8 @@ object Form1: TForm1
         OnClick = sButton3Click
       end
       object sPanel2: TsPanel
-        Left = 82
-        Top = 96
+        Left = 714
+        Top = -176
         Width = 601
         Height = 193
         DoubleBuffered = False
@@ -843,7 +842,6 @@ object Form1: TForm1
               ShowHint = True
               TabOrder = 0
               Text = #1042#1099#1073#1077#1088#1080#1090#1077' PGF '#1092#1072#1081#1083
-              OnChange = sEdit8Change
             end
             object sButton15: TsButton
               Left = 592
@@ -1051,7 +1049,6 @@ object Form1: TForm1
               ShowHint = True
               TabOrder = 0
               Text = #1055#1091#1090#1100' '#1082' PGF '#1092#1072#1081#1083#1091' '#1076#1083#1103' '#1054#1073#1098#1077#1076#1080#1085#1077#1085#1080#1103'...'
-              OnChange = sEdit6Change
             end
             object sButton10: TsButton
               Left = 592
@@ -1121,7 +1118,6 @@ object Form1: TForm1
               ShowHint = True
               TabOrder = 0
               Text = #1042#1099#1073#1077#1088#1080#1090#1077' PGF '#1092#1072#1081#1083
-              OnChange = sEdit7Change
             end
             object sButton12: TsButton
               Left = 592

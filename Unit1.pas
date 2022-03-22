@@ -145,11 +145,7 @@ type
     procedure sTrackBar1Change(Sender: TObject);
     procedure sTrackBar2Change(Sender: TObject);
     procedure sEdit1Change(Sender: TObject);
-    procedure sEdit2Change(Sender: TObject);
-    procedure sEdit8Change(Sender: TObject);
     procedure sEdit5Change(Sender: TObject);
-    procedure sEdit6Change(Sender: TObject);
-    procedure sEdit7Change(Sender: TObject);
     procedure sButton1Click(Sender: TObject);
     procedure sOpenDialog1CanClose(Sender: TObject; var CanClose: Boolean);
     procedure sButton6Click(Sender: TObject);
@@ -371,10 +367,10 @@ procedure TForm1.FormCreate(Sender: TObject);
 var
 s1, s2: string;
 begin
-tmp_dir:=ExtractFilePath(Application.ExeName) + 'temp\';
+tmp_dir:=ExtractFilePath(Application.ExeName) + '\temp\';
 time:=11;
-if FileExists(ExtractFilePath(Application.ExeName) + 'Languages.sil') then begin
-siLang1.LoadAllFromFile(ExtractFilePath(Application.ExeName) + 'Languages.sil', True);
+if FileExists(ExtractFilePath(Application.ExeName) + '\Languages.sil') then begin
+siLang1.LoadAllFromFile(ExtractFilePath(Application.ExeName) + '\Languages.sil', True);
 sComboBox5.Items := siLang1.LangNames;
 if RegValueExists('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin') = True then begin
 sSkinManager1.SkinName := RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin','Fluent Night (internal)');
@@ -540,29 +536,9 @@ begin
 sButton2.Enabled:=True;
 end;
 
-procedure TForm1.sEdit2Change(Sender: TObject);
-begin
-sButton5.Enabled:=True;
-end;
-
-procedure TForm1.sEdit8Change(Sender: TObject);
-begin
-sButton14.Enabled:=True;
-end;
-
 procedure TForm1.sEdit5Change(Sender: TObject);
 begin
 sButton10.Enabled:=True;
-end;
-
-procedure TForm1.sEdit6Change(Sender: TObject);
-begin
-sButton11.Enabled:=True;
-end;
-
-procedure TForm1.sEdit7Change(Sender: TObject);
-begin
-sButton13.Enabled:=True;
 end;
 
 procedure TForm1.sButton1Click(Sender: TObject);
@@ -579,6 +555,7 @@ begin
 if ttf_main = 1 then begin
 sEdit1.Text:=sOpenDialog1.FileName;
 ttf_main := 0;
+
 end;
 if ttf_conv = 1 then begin
 sEdit3.Text:=sOpenDialog1.FileName;
@@ -587,6 +564,7 @@ end;
 if pgf_info = 1 then begin
 sEdit8.Text:=sOpenDialog1.FileName;
 pgf_info := 0;
+sButton14.Enabled:=True;
 end;
 if pgf_mrg1 = 1 then begin
 sEdit5.Text:=sOpenDialog1.FileName;
@@ -595,10 +573,12 @@ end;
 if pgf_mrg2 = 1 then begin
 sEdit6.Text:=sOpenDialog1.FileName;
 pgf_mrg2 := 0;
+sButton11.Enabled:=True;
 end;
 if pgf_bmp = 1 then begin
 sEdit7.Text:=sOpenDialog1.FileName;
 pgf_bmp := 0;
+sButton13.Enabled:=True;
 end;
 end;
 
@@ -664,10 +644,12 @@ begin
 if pgf_main = 1 then begin
 sEdit2.Text:=sSaveDialog1.FileName;
 pgf_main := 0;
+sButton5.Enabled:=True;
 end;
 if pgf_conv = 1 then begin
 sEdit4.Text:=sSaveDialog1.FileName;
 pgf_conv := 0;
+sButton8.Enabled:=True;
 end;
 end;
 
