@@ -2185,13 +2185,6 @@ object Form1: TForm1
       Transparent = True
       TransparentForMouse = True
     end
-    object Label1: TLabel
-      Left = 488
-      Top = 24
-      Width = 32
-      Height = 13
-      Caption = 'Label1'
-    end
     object sComboBox5: TsComboBox
       Left = 592
       Top = 10

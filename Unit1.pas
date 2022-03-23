@@ -128,7 +128,6 @@ type
     sLabel31: TsLabel;
     Timer1: TTimer;
     FO: TJvSHFileOperation;
-    Label1: TLabel;
     procedure RunDosInMemo(DosApp:String;AMemo:TMemo);
     procedure sButton3Click(Sender: TObject);
     procedure sButton4Click(Sender: TObject);
