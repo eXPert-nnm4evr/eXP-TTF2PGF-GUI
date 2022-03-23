@@ -1,4 +1,4 @@
-
+﻿
 [Captions]
 TForm1.C_cmd=Получить карту символов в шестнадцатеричном виде~!@#$Dump chars map in HEX~!@#$
 TForm1.H_cmd=Получить данные заголовка файла PGF~!@#$Dump font header~!@#$
@@ -59,7 +59,7 @@ TForm1.sLabel22=0~!@#$0~!@#$
 TForm1.sLabel23=3~!@#$3~!@#$
 TForm1.sLabel26=Язык:~!@#$Language:~!@#$
 TForm1.sLabel27=Оболочка:~!@#$Skin:~!@#$
-TForm1.sLabel28=В Windows 8 - 8.1 - 10 - 11данная версия конвертораНЕ РАБОТАЕТ!!!~!@#$In Windows 10, thisconverter versionDOES NOT WORK!!!~!@#$
+TForm1.sLabel28=В Windows 10 - 11данная версия конвертораНЕ РАБОТАЕТ!!!~!@#$In Windows 10 - 11,this converter versionDOES NOT WORK!!!~!@#$
 TForm1.sLabel29=Переход к вкладке простого коневертера произойдёт через~!@#$The transition to the tab of a simple converger will occur through~!@#$
 TForm1.sLabel3=Горизонтальное масштабирование букв:~!@#$Letter horizontal scaling:~!@#$
 TForm1.sLabel31=секунд.~!@#$sec.~!@#$

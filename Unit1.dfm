@@ -1,11 +1,11 @@
 object Form1: TForm1
-  Left = 316
-  Top = 119
+  Left = 343
+  Top = 146
   AutoSize = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'eXP.Net TTF2PGF GUI 1.0'
-  ClientHeight = 531
+  ClientHeight = 530
   ClientWidth = 745
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -22,7 +22,7 @@ object Form1: TForm1
   TextHeight = 13
   object sPageControl1: TsPageControl
     Left = 0
-    Top = 42
+    Top = 41
     Width = 745
     Height = 489
     ActivePage = sTabSheet1
@@ -574,7 +574,7 @@ object Form1: TForm1
         OnClick = sButton3Click
       end
       object sPanel2: TsPanel
-        Left = 714
+        Left = 722
         Top = -176
         Width = 601
         Height = 193
@@ -588,9 +588,7 @@ object Form1: TForm1
           Height = 135
           Alignment = taCenter
           AutoSize = False
-          Caption = 
-            #1042' Windows 8 - 8.1 - 10 - 11'#13#10#1076#1072#1085#1085#1072#1103' '#1074#1077#1088#1089#1080#1103' '#1082#1086#1085#1074#1077#1088#1090#1086#1088#1072#13#10#1053#1045' '#1056#1040#1041#1054#1058#1040 +
-            #1045#1058'!!!'
+          Caption = #1042' Windows 10 - 11'#13#10#1076#1072#1085#1085#1072#1103' '#1074#1077#1088#1089#1080#1103' '#1082#1086#1085#1074#1077#1088#1090#1086#1088#1072#13#10#1053#1045' '#1056#1040#1041#1054#1058#1040#1045#1058'!!!'
           ParentFont = False
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clRed
@@ -2186,6 +2184,13 @@ object Form1: TForm1
         FFFFFFFFFFFFFFFFFF00}
       Transparent = True
       TransparentForMouse = True
+    end
+    object Label1: TLabel
+      Left = 488
+      Top = 24
+      Width = 32
+      Height = 13
+      Caption = 'Label1'
     end
     object sComboBox5: TsComboBox
       Left = 592

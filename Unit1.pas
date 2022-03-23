@@ -9,7 +9,7 @@ uses
   sCustomComboEdit, ExtCtrls, sPanel, acImage, acAlphaHints, sSkinManager,
   sComboBoxes, siComp, sMemo, acPNG, ShellAPI, sDialogs, iComponent,
   iVCLComponent, iCustomComponent, iLabel, JvBaseDlg, JvSHFileOperation,
-  SquallRegistry;
+  SquallRegistry, JclSysInfo;
 
 type
   TForm1 = class(TForm)
@@ -128,6 +128,7 @@ type
     sLabel31: TsLabel;
     Timer1: TTimer;
     FO: TJvSHFileOperation;
+    Label1: TLabel;
     procedure RunDosInMemo(DosApp:String;AMemo:TMemo);
     procedure sButton3Click(Sender: TObject);
     procedure sButton4Click(Sender: TObject);
@@ -186,67 +187,6 @@ begin
   Result:= ExtractFileName(FileName);
   FEx:= ExtractFileExt(FileName);
   Delete(Result,pos(FEx,Result),Length(FEx));
-end;
-
-function GetWinVer: string;
-var
-  temp1, temp2, temp3:  integer;
-  OsVer: OSVERSIONINFO;
-begin
-   OsVer.dwOSVersionInfoSize := SizeOf( OSVERSIONINFO );
-   GetVersionEx( OsVer );
-   temp1 := OsVer.dwMajorVersion;
-   temp2 := OsVer.dwMinorVersion;
-   temp3 := OsVer.dwPlatformId;
- 
-   if temp1 = 4 then
-      if temp2 = 0 then
-         if temp3 = VER_PLATFORM_WIN32_WINDOWS then
-            Result := 'Windows 95';
- 
-   if temp1 = 4 then
-      if temp2 = 10 then
-         Result := 'Windows 98';
- 
-   if temp1 = 4 then
-      if temp2 = 90 then
-         Result := 'Windows Me';
- 
-   if temp1 = 3 then
-      if temp2 = 51 then
-         Result := 'Windows NT 3.51';
- 
-   if temp1 = 4 then
-      if temp2 = 0 then
-         Result := 'Windows NT 4.0';
- 
-   if temp1 = 5 then
-      if temp2 = 0 then
-         Result := 'Windows 2000';
- 
-   if temp1 = 5 then
-      if temp2 = 1 then
-         Result := 'Windows XP';
- 
-   if temp1 = 6 then
-      if temp2 = 0 then
-         Result := 'Windows Vista';
- 
-   if temp1 = 6 then
-      if temp2 = 1 then
-         Result := 'Windows 7';
-
-   if temp1 = 6 then
-      if temp2 = 2 then
-         Result := 'Windows 8';
-
-   if temp1 = 6 then
-      if temp2 = 3 then
-         Result := 'Windows 8.1';
-
-   if temp1 = 10 then
-      if temp2 = 0 then
-         Result := 'Windows 10';
 end;
 
 function ExecAndWait(const FileName,
@@ -379,7 +319,7 @@ end;
 if RegValueExists('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Lang') = True then begin
 sComboBox5.ItemIndex := StrToInt(RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Lang','0'));
 end;
-if (GetWinVer = 'Windows 8') or (GetWinVer = 'Windows 8.1') or (GetWinVer = 'Windows 10') then begin
+if JclSysInfo.GetWindowsVersionString = 'Windows 10' then begin
 sTabSheet1.Enabled:=False;
 sPanel2.Left:=66;
 sPanel2.Top:=120;
@@ -403,7 +343,7 @@ pgf_bmp:=0;
 end
 else begin
 ShowMessage('языковой файл (Languages.sil) не найден! ѕрименЄн €зык по умолчанию: –усский!');
-if (GetWinVer = 'Windows 8') or (GetWinVer = 'Windows 8.1') or (GetWinVer = 'Windows 10') then begin
+if JclSysInfo.GetWindowsVersionString = 'Windows 10' then begin
 sTabSheet1.Enabled:=False;
 sPanel2.Left:=66;
 sPanel2.Top:=120;
