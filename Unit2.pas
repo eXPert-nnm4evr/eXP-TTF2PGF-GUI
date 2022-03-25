@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, sButton, ExtCtrls, acImage, sPanel, Buttons, sBitBtn,
-  siComp, siLngLnk, JvSHFileOperation, sLabel;
+  siComp, siLngLnk, JvSHFileOperation, sLabel, acPNG;
 
 type
   TForm2 = class(TForm)
@@ -107,7 +107,7 @@ if i >= 0 then begin
  sImage1.Picture.LoadFromFile(bmp_imgs_path + ListBox1.Items[ListBox1.ItemIndex]);
  if ListBox1.ItemIndex = 0 then sBitBtn1.Enabled := False;
  if ListBox1.ItemIndex < (i-1) then sBitBtn2.Enabled := True;
-end;
+end;  
 end;
 
 end.

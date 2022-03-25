@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 753
-  Top = 170
+  Left = 928
+  Top = 157
   BorderIcons = [biSystemMenu]
   BorderStyle = bsToolWindow
   Caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
@@ -162,7 +162,7 @@ object Form3: TForm3
         end
         item
           Style = msHTML
-          Text = '<font color="lime">IOComp Components 4.0.4 SP2</font>'
+          Text = '<font color="lime">IOComp Components 4.02 SP2</font>'
         end
         item
           Style = msHTML
@@ -183,6 +183,20 @@ object Form3: TForm3
           Text = 
             '<a href="https://www.delphi-jedi.org/"><font color="lime"><u>www' +
             '.Delphi-JEDI.org</u></font></a>'
+        end
+        item
+          Style = msHTML
+          Text = '<font color="lime"><b>&bull;</b></font>'
+        end
+        item
+          Style = msHTML
+          Text = '<font color="lime">TMS Component pack v5.5.4.1</font>'
+        end
+        item
+          Style = msHTML
+          Text = 
+            '<a href="http://www.tmssoftware.com"><font color="lime"><u>tmsso' +
+            'ftware.com</u></font></a>'
         end
         item
           Style = msHTML
@@ -217,6 +231,12 @@ object Form3: TForm3
           Text = 
             '<a href="mailto:Squall2007@yandex.ru"><font color="lime"><u>Squa' +
             'll2007@yandex.ru</u></font></a>'
+        end
+        item
+          Style = msHTML
+          Text = 
+            '<a href="http://kladovka.net.ru/index.cgi?pid=list&rid=483"><fon' +
+            't color="lime"><u>'#1050#1083#1072#1076#1086#1074#1082#1072' '#1048#1089#1093#1086#1076#1085#1080#1082#1086#1074'</u></font></a>'
         end
         item
           Style = msHTML
@@ -330,7 +350,7 @@ object Form3: TForm3
         end
         item
           Style = msHTML
-          Text = '<font color="lime">IOComp Components 4.0.4 SP2</font>'
+          Text = '<font color="lime">IOComp Components 4.02 SP2</font>'
         end
         item
           Style = msHTML
@@ -351,6 +371,20 @@ object Form3: TForm3
           Text = 
             '<a href="https://www.delphi-jedi.org/"><font color="lime"><u>www' +
             '.Delphi-JEDI.org</u></font></a>'
+        end
+        item
+          Style = msHTML
+          Text = '<font color="lime"><b>&bull;</b></font>'
+        end
+        item
+          Style = msHTML
+          Text = '<font color="lime">TMS Component pack v5.5.4.1</font>'
+        end
+        item
+          Style = msHTML
+          Text = 
+            '<a href="http://www.tmssoftware.com"><font color="lime"><u>tmsso' +
+            'ftware.com</u></font></a>'
         end
         item
           Style = msHTML
@@ -385,6 +419,12 @@ object Form3: TForm3
           Text = 
             '<a href="mailto:Squall2007@yandex.ru"><font color="lime"><u>Squa' +
             'll2007@yandex.ru</u></font></a>'
+        end
+        item
+          Style = msHTML
+          Text = 
+            '<a href="http://kladovka.net.ru/index.cgi?pid=list&rid=483"><fon' +
+            't color="lime"><u>Delphi - Modules (RUS)</u></font></a>'
         end
         item
           Style = msHTML

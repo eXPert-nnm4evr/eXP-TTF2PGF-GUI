@@ -9,7 +9,7 @@ uses
   sCustomComboEdit, ExtCtrls, sPanel, acImage, acAlphaHints, sSkinManager,
   sComboBoxes, siComp, sMemo, acPNG, ShellAPI, sDialogs, iComponent,
   iVCLComponent, iCustomComponent, iLabel, JvBaseDlg, JvSHFileOperation,
-  SquallRegistry, JclSysInfo;
+  SquallRegistry, JclSysInfo, AdvSmoothSplashScreen;
 
 type
   TForm1 = class(TForm)
@@ -128,6 +128,7 @@ type
     sLabel31: TsLabel;
     Timer1: TTimer;
     FO: TJvSHFileOperation;
+    Splash: TAdvSmoothSplashScreen;
     procedure RunDosInMemo(DosApp:String;AMemo:TMemo);
     procedure sButton3Click(Sender: TObject);
     procedure sButton4Click(Sender: TObject);
@@ -161,6 +162,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure sButton18Click(Sender: TObject);
     procedure sSkinSelector1Change(Sender: TObject);
+    procedure sCheckBox5Click(Sender: TObject);
   private
 
   public
@@ -279,7 +281,7 @@ end;
 procedure TForm1.sButton3Click(Sender: TObject);
 begin
 {FO.Operation:=foDelete;
-FO.SourceFiles.Add(ExtractFilePath(Application.ExeName) + 'temp\*.*');
+FO.SourceFiles.Add(ExtractFilePath(Application.ExeName) + '\temp\*.*');
 FO.Execute;   }
 Application.Terminate;
 end;
@@ -287,7 +289,7 @@ end;
 procedure TForm1.sButton4Click(Sender: TObject);
 begin
 {FO.Operation:=foDelete;
-FO.SourceFiles.Add(ExtractFilePath(Application.ExeName) + 'temp\*.*');
+FO.SourceFiles.Add(ExtractFilePath(Application.ExeName) + '\temp\*.*');
 FO.Execute; }
 Application.Terminate;
 end;
@@ -306,6 +308,10 @@ procedure TForm1.FormCreate(Sender: TObject);
 var
 s1, s2: string;
 begin
+Splash.Show;
+Splash.BeginUpdate;
+Splash.EndUpdate;
+Sleep(2000);
 tmp_dir:=ExtractFilePath(Application.ExeName) + '\temp\';
 time:=11;
 if FileExists(ExtractFilePath(Application.ExeName) + '\Languages.sil') then begin
@@ -380,7 +386,7 @@ end;
 
 procedure TForm1.sButton5Click(Sender: TObject);
 var
-cmd, b, i, shd: string;
+cmd, b, i, shd, cmd2: string;
 begin
 if sCheckBox2.Checked = true then b:='b' else b:='';
 if sCheckBox1.Checked = true then i:='i' else i:='';
@@ -388,15 +394,31 @@ if sCheckBox5.Checked = true then shd:='n'
 else begin
 shd:='b' + sLabel6.Caption + 'i' + sLabel10.Caption + 'x' + sLabel24.Caption + 'y' + sLabel25.Caption;
 end;
-cmd:= sEdit1.Text + ' ' + sEdit2.Text + ' ' + sComboBox1.Text + 'h' + sComboBox2.Text + 'a' + sComboBox3.Text + b + i + ' ' + shd + ExtractFilePath(Application.ExeName) +'temp\font.bmp';
-ExecAndWait(ExtractFilePath(Application.ExeName) + '1ttf2pgf.exe', cmd, SW_HIDE);
+cmd:= sEdit1.Text + ' ' + sEdit2.Text + ' ' + sComboBox1.Text + 'h' + sComboBox2.Text + 'a' + sComboBox3.Text + b + i + ' ' + shd + ExtractFilePath(Application.ExeName) +'\temp\font.bmp';
+ExecAndWait(ExtractFilePath(Application.ExeName) + '\1ttf2pgf.exe', cmd, SW_HIDE);
+if sCheckBox3.Checked = True then begin
+Form2.ShowModal;
+end;
+if sCheckBox4.Checked = True then begin
+cmd2:='-b ' + sEdit2.Text;
+ExecAndWait(ExtractFilePath(Application.ExeName) + '\dump_pgf.exe', cmd2, SW_HIDE);
+bmp_path:= ExtractFilePath(Application.ExeName) + '\' + ExtractFileNameNoExt(sEdit7.Text) + '\_bmp\';
+FO.Operation:=foMove;
+FO.SourceFiles.Add(bmp_path + '*.*');
+FO.DestFiles.Add(tmp_dir + '*.*');
+FO.Execute;
+fls_cmpl:=True;
+end;
+if (sCheckBox4.Checked = True) or (sCheckBox3.Checked = True) then begin
+Form2.ShowModal;
+end;
 end;
 
 procedure TForm1.sButton8Click(Sender: TObject);
 var
 cmd:string;
 begin
-cmd:=ExtractFilePath(Application.ExeName) + 'ttf_pgf.exe ' + sEdit3.Text + ' ' + sEdit4.Text;
+cmd:=ExtractFilePath(Application.ExeName) + '\ttf_pgf.exe ' + sEdit3.Text + ' ' + sEdit4.Text;
 RunDosInMemo(cmd, sMemo2);
 end;
 
@@ -412,7 +434,7 @@ if S_cmd.Checked = true then s:='-s ' else s:='';
 if P_cmd.Checked = true then p:='-p ' else p:='';
 if (h='') and (m='') and (c='') and (i='') and (s='') and (p='') then ShowMessage(siLang1.GetTextOrDefault('IDS_27' (* 'ƒолжен быть выбран хот€ бы один параметр!' *) ))
 else begin
-cmd:=ExtractFilePath(Application.ExeName) + 'dump_pgf.exe ' + h + m + c + i + s + p + sEdit8.Text;
+cmd:=ExtractFilePath(Application.ExeName) + '\dump_pgf.exe ' + h + m + c + i + s + p + sEdit8.Text;
 RunDosInMemo(cmd, sMemo3);
 end;
 end;
@@ -421,22 +443,22 @@ procedure TForm1.sButton11Click(Sender: TObject);
 var
 cmd:string;
 begin
-cmd:=ExtractFilePath(Application.ExeName) + 'mix_pgf.exe ' + sEdit5.Text + ' ' + sEdit6.Text;
+cmd:=ExtractFilePath(Application.ExeName) + '\mix_pgf.exe ' + sEdit5.Text + ' ' + sEdit6.Text;
 RunDosInMemo(cmd, sMemo4);
 end;
 
 procedure TForm1.sButton13Click(Sender: TObject);
 var
 cmd:string;
-begin            
-cmd:=ExtractFilePath(Application.ExeName) + 'dump_pgf.exe ' + '-b ' + sEdit7.Text;
+begin
+cmd:=ExtractFilePath(Application.ExeName) + '\dump_pgf.exe ' + '-b ' + sEdit7.Text;
 RunDosInMemo(cmd, sMemo5);
-bmp_path:= ExtractFilePath(Application.ExeName) + ExtractFileNameNoExt(sEdit7.Text) + '_bmp\';
+bmp_path:= ExtractFilePath(Application.ExeName) + '\' + ExtractFileNameNoExt(sEdit7.Text) + '\_bmp\';
 FO.Operation:=foMove;
 FO.SourceFiles.Add(bmp_path + '*.*');
 FO.DestFiles.Add(tmp_dir + '*.*');
 FO.Execute;
-fls_cmpl:=True;
+fls_cmpl:=True; 
 Form2.ShowModal;
 end;
 
@@ -599,6 +621,7 @@ sLabel30.Caption:=Format('%.2d', [time]);
 if time = 0 then begin
 Timer1.Enabled:=False;
 sPageControl1.ActivePage:=sTabSheet2;
+sPageControl2.ActivePage:=sTabSheet3;
 sPageControl1.Pages[0].TabVisible:=False;
 end;
 end;
@@ -632,6 +655,18 @@ sPageControl1.ActivePage:=sTabSheet1;
 siLang1.Language := siLang1.LangNames[sComboBox5.ItemIndex];
 Form2.siLangLinked1.Language := siLang1.LangNames[sComboBox5.ItemIndex];
 Form3.siLangLinked1.Language := siLang1.LangNames[sComboBox5.ItemIndex];
+if sCheckBox5.Checked = True then begin
+sTrackBar1.Enabled := False;
+sTrackBar2.Enabled := False;
+sTrackBar3.Enabled := False;
+sTrackBar4.Enabled := False;
+end
+else begin
+sTrackBar1.Enabled := True;
+sTrackBar2.Enabled := True;
+sTrackBar3.Enabled := True;
+sTrackBar4.Enabled := True;
+end;
 end;
 
 procedure TForm1.sButton18Click(Sender: TObject);
@@ -644,6 +679,22 @@ end;
 procedure TForm1.sSkinSelector1Change(Sender: TObject);
 begin
 RegWriteString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin', sSkinSelector1.Text);
+end;
+
+procedure TForm1.sCheckBox5Click(Sender: TObject);
+begin
+if sCheckBox5.Checked = True then begin
+sTrackBar1.Enabled := False;
+sTrackBar2.Enabled := False;
+sTrackBar3.Enabled := False;
+sTrackBar4.Enabled := False;
+end
+else begin
+sTrackBar1.Enabled := True;
+sTrackBar2.Enabled := True;
+sTrackBar3.Enabled := True;
+sTrackBar4.Enabled := True;
+end;
 end;
 
 end.
