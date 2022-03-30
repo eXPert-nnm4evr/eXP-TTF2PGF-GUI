@@ -18,7 +18,7 @@
 - [TTF2PGF](https://www.pspx.ru/forum/showthread.php?t=86308) от Erik Pshat
 - [TTF2PGF](https://github.com/tpunix/pgftool) от tpunix
 
-На данной странице находится только исходный код самого GUI, все остальные файлы (кроме компонентов для Delphi) находятся в [установочном файле](https://mega.nz/file/4xdkxRRB#4A9eIPpN8b-dx0Sf7fM0p4HNzOzTjC4M2m_J3Y1n1n4)!
+На данной странице находится только исходный код самого GUI, все остальные файлы (кроме компонентов для Delphi) находятся в [установочном файле](https://mega.nz/file/t48XTa4Q#rsOv5kH7QOYWK0ovY2mLkzUrd6_rPkTn8D9h9X5FOes)!
 
 В установочный файл входит модуль перевода файла Languages.sil, из комплекта TsiLang Components Suite, для возможности добавлять различные языки (по умолчанию есть только Русский и Английский языки) перевода интерфейса GUI.
 
@@ -47,7 +47,7 @@ Used console TTF2PGF converters:
 - [TTF2PGF](https://www.pspx.ru/forum/showthread.php?t=86308) by Erik Pshat
 - [TTF2PGF](https://github.com/tpunix/pgftool) by tpunix
 
-This page contains only the source code of the GUI itself, all other files (except components for Delphi) are in the [installation file](https://mega.nz/file/4xdkxRRB#4A9eIPpN8b-dx0Sf7fM0p4HNzOzTjC4M2m_J3Y1n1n4)!
+This page contains only the source code of the GUI itself, all other files (except components for Delphi) are in the [installation file](https://mega.nz/file/t48XTa4Q#rsOv5kH7QOYWK0ovY2mLkzUrd6_rPkTn8D9h9X5FOes)!
 
 The installation file includes a translation module for the Languages.sil file, from the TsiLang Components Suite, for the ability to add different languages (by default there are only Russian and English) to translate the GUI interface.
 
