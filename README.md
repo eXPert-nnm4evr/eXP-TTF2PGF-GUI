@@ -9,6 +9,7 @@
 - [SiComponents TsiLang Components Suite V7.6.0.1](http://www.tsilang.com/)
 - [IOComp Components 4.0.4 SP2](https://www.iocomp.com/)
 - [JEDI-VCL V3.49](https://www.delphi-jedi.org/)
+- [TMS Component pack v5.5.4.1](http://www.tmssoftware.com)
 - [TRealTimeMarquee V3.5](http://www.delphiarea.com/products/delphi-components/marquee/)
 - [SquallRegistry](http://kladovka.net.ru/index.cgi?pid=list&rid=483)
 
@@ -37,6 +38,7 @@ The program is written in Delphi 7 using the following components:
 - [SiComponents TsiLang Components Suite V7.6.0.1](http://www.tsilang.com/)
 - [IOComp Components 4.0.4 SP2](https://www.iocomp.com/)
 - [JEDI-VCL V3.49](https://www.delphi-jedi.org/)
+- [TMS Component pack v5.5.4.1](http://www.tmssoftware.com)
 - [TRealTimeMarquee V3.5](http://www.delphiarea.com/products/delphi-components/marquee/)
 - [SquallRegistry](http://kladovka.net.ru/index.cgi?pid=list&rid=483)
 
