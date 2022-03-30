@@ -197,8 +197,8 @@ var
   StartInfo: TStartupInfo; 
   ProcInfo: TProcessInformation; 
   CmdLine: String;
-begin 
-  { Помещаем имя файла между кавычками, с соблюдением всех пробелов в именах Win9x } 
+begin
+
   CmdLine := '"' + Filename + '" ' + Params; 
   FillChar(StartInfo, SizeOf(StartInfo), #0); 
   with StartInfo do 
@@ -209,12 +209,11 @@ begin
   end; 
   Result := CreateProcess(nil, PChar( String( CmdLine ) ), nil, nil, false, 
                           CREATE_NEW_CONSOLE or NORMAL_PRIORITY_CLASS, nil, 
-                          PChar(ExtractFilePath(Filename)),StartInfo,ProcInfo); 
-  { Ожидаем завершения приложения } 
+                          PChar(ExtractFilePath(Filename)),StartInfo,ProcInfo);
+
   if Result then 
   begin 
-    WaitForSingleObject(ProcInfo.hProcess, INFINITE); 
-    { Free the Handles } 
+    WaitForSingleObject(ProcInfo.hProcess, INFINITE);
     CloseHandle(ProcInfo.hProcess); 
     CloseHandle(ProcInfo.hThread); 
   end; 
@@ -280,17 +279,17 @@ end;
 
 procedure TForm1.sButton3Click(Sender: TObject);
 begin
-{FO.Operation:=foDelete;
+FO.Operation:=foDelete;
 FO.SourceFiles.Add(ExtractFilePath(Application.ExeName) + '\temp\*.*');
-FO.Execute;   }
+FO.Execute;
 Application.Terminate;
 end;
 
 procedure TForm1.sButton4Click(Sender: TObject);
 begin
-{FO.Operation:=foDelete;
+FO.Operation:=foDelete;
 FO.SourceFiles.Add(ExtractFilePath(Application.ExeName) + '\temp\*.*');
-FO.Execute; }
+FO.Execute;
 Application.Terminate;
 end;
 
@@ -318,8 +317,8 @@ if FileExists(ExtractFilePath(Application.ExeName) + '\Languages.sil') then begi
 siLang1.LoadAllFromFile(ExtractFilePath(Application.ExeName) + '\Languages.sil', True);
 sComboBox5.Items := siLang1.LangNames;
 if RegValueExists('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin') = True then begin
-sSkinManager1.SkinName := RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin','Fluent Night (internal)');
-sSkinSelector1.Text := RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin','Fluent Night (internal)');
+sSkinManager1.SkinName := RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin','Fluent Night');
+sSkinSelector1.Text := RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Skin','Fluent Night');
 end;
 if RegValueExists('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Lang') = True then begin
 sComboBox5.ItemIndex := StrToInt(RegReadString('HKCU\SOFTWARE\eXP.Net\TTF2PGF_GUI\Lang','0'));

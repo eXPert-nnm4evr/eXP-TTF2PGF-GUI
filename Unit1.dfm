@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 343
-  Top = 146
+  Left = 344
+  Top = 185
   AutoSize = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -2217,7 +2217,7 @@ object Form1: TForm1
     ExtendedBorders = True
     InternalSkins = <
       item
-        Name = 'Dark Metro (internal)'
+        Name = 'Metro Dark'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -5778,7 +5778,7 @@ object Form1: TForm1
         OriginName = 'Dark Metro.asz'
       end
       item
-        Name = 'Fluent Day (internal)'
+        Name = 'Fluent Day'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -7402,7 +7402,7 @@ object Form1: TForm1
         OriginName = 'Fluent Day.asz'
       end
       item
-        Name = 'Fluent Night (internal)'
+        Name = 'Fluent Night'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -9311,7 +9311,7 @@ object Form1: TForm1
         OriginName = 'Fluent Night.asz'
       end
       item
-        Name = 'Light Metro (internal)'
+        Name = 'Metro Light'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -12649,7 +12649,7 @@ object Form1: TForm1
         OriginName = 'Light Metro.asz'
       end
       item
-        Name = 'Material Dark (internal)'
+        Name = 'Material Dark'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -15127,7 +15127,7 @@ object Form1: TForm1
         OriginName = 'Material Dark.asz'
       end
       item
-        Name = 'Material Light (internal)'
+        Name = 'Material Light'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -17922,7 +17922,7 @@ object Form1: TForm1
         OriginName = 'Material Light.asz'
       end
       item
-        Name = 'NeonNight (internal)'
+        Name = 'Neon Night'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -22010,7 +22010,7 @@ object Form1: TForm1
         OriginName = 'NeonNight.asz'
       end
       item
-        Name = 'Windows 10 dark (internal)'
+        Name = 'Windows 10 Dark'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -23298,7 +23298,7 @@ object Form1: TForm1
         OriginName = 'Windows 10 dark.asz'
       end
       item
-        Name = 'Windows 10 light (internal)'
+        Name = 'Windows 10 Light'
         Version = 15.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -26234,7 +26234,7 @@ object Form1: TForm1
         OriginName = 'Windows 10 light.asz'
       end
       item
-        Name = 'Windows 11 dark (internal)'
+        Name = 'Windows 11 Dark'
         Version = 16.130000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -28012,7 +28012,7 @@ object Form1: TForm1
         OriginName = 'Windows 11 dark.asz'
       end
       item
-        Name = 'Windows 11 light (internal)'
+        Name = 'Windows 11 Light'
         Version = 16.000000000000000000
         Author = 'Serge Goncharov'
         Data = {
@@ -29989,8 +29989,7 @@ object Form1: TForm1
           426082}
         OriginName = 'Windows 11 light.asz'
       end>
-    SkinDirectory = 'c:\Skins'
-    SkinName = 'Fluent Night (internal)'
+    SkinName = 'Fluent Night'
     SkinInfo = '15'
     ThirdParty.ThirdEdits = ' '
     ThirdParty.ThirdButtons = 'TButton'
